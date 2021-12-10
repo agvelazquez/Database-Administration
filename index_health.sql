@@ -16,3 +16,6 @@ INNER JOIN sys.indexes ix
 	on ixs.index_id = ix.index_id
 	and ixs.object_id = ix.object_id
 ORDER BY avg_fragmentation_in_percent DESC
+
+
+-- Reorganize the index when fagmentation is between 15 and 30 % and page count greater than 500. When its greater, rebuild it. 
