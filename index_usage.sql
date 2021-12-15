@@ -9,7 +9,7 @@ inner join sys.indexes ix
 		on	ixu.object_id = ix.object_id 
 			and ixu.index_id = ix.index_id
 			and database_id = DB_ID()
-where database_id = DB_ID('WideWorldImportersDW')
+where database_id = DB_ID()
 order by 3 desc
 
 
